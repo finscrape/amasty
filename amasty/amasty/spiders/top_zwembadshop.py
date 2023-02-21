@@ -65,7 +65,7 @@ import mysql.connector as mc
 class TopZwembadshopSpider(XMLFeedSpider):
     name = 'top_zwembadshop'
     # allowed_domains = ['a.com']
-    start_urls = ['https://www.google.xml']
+    start_urls = ['https://www.top-zwembadshop.nl/media/www.top-zwembadshop.nl/products.xml']
     def __init__(self):
         #mysql connection
         
