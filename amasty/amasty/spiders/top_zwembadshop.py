@@ -1,7 +1,7 @@
 import scrapy
 import json
 from amasty import utils
-
+from time import sleep
 import pandas as pd
 import json
 from scrapy.spiders import XMLFeedSpider
@@ -100,7 +100,7 @@ class TopZwembadshopSpider(XMLFeedSpider):
 
     def parse_node(self, response, node):
         print('yes')
-
+        sleep(100)
         urls = node.xpath("./text()").extract()
         for i in urls:
         
