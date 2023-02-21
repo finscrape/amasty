@@ -72,6 +72,7 @@ data = pd.DataFrame({'sku':new_sku,'ean':new_eann,'name':new_name})
 #mysql connection
 import mysql.connector as mc
 
+print('aaaaaaaaaaaaaaaaaaaaaa')
 
 class TopZwembadshopSpider(XMLFeedSpider):
     name = 'top_zwembadshop'
@@ -112,6 +113,7 @@ class TopZwembadshopSpider(XMLFeedSpider):
     def parse_node(self, response, node):
 
         urls = node.xpath("./text()").extract()
+        
         for i in urls:
         
             furl = f'{i}'
