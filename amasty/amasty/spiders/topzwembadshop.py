@@ -8,3 +8,9 @@ class TopzwembadshopSpider(scrapy.Spider):
 
     def parse(self, response):
         print(response.body)
+        print(response.body)
+        print(response.body)
+        print(response.body)
+        print(response.body)
+        yield {"body":response.body}
+          
