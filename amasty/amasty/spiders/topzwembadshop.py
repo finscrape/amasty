@@ -7,5 +7,4 @@ class TopzwembadshopSpider(scrapy.Spider):
     start_urls = ['https://www.top-zwembadshop.nl/media/www.top-zwembadshop.nl/products.xml']
 
     def parse(self, response):
-        url = response.xpath("//span[contains(text(),'https://www.top-zwembadshop')]")
-        print(url)
+        print(response.body)
